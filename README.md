@@ -51,5 +51,5 @@ Day 3:
 * Polish.
 * Add very secret easter egg.
 
-
+<img width="986" alt="Screen Shot 2019-10-15 at 10 36 16 AM" src="https://user-images.githubusercontent.com/52796844/66841476-bcb92200-ef37-11e9-8758-04a85b9af29e.png">
 
