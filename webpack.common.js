@@ -53,6 +53,10 @@ module.exports = {
                 "sass-loader",
                 "postcss-loader"
             ]
+        },
+        {
+            test: /\.svg$/,
+            loader: require.resolve('raw-loader'),
         }
         ]
     },

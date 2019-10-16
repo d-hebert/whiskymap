@@ -2,7 +2,7 @@
 // Tobacco, Honey, Spicy, Winey, Nutty, Malty, Fruity, 
 // Floral, Postcode, Latitude, Longitude],
 
-export class Taste {
+export class DistilleryGraph {
         constructor(args) {
             this.stats = args
             [this.distillery,
@@ -19,7 +19,7 @@ export class Taste {
                 this.fruity,
                 this.floral] = args
 
-            this.container = d3.select("div")
+            this.container = d3.select("#distillery-graph-container")
                 .append("svg")
                 .attr("height", 800)
                 .attr("width", 800);
