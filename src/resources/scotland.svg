@@ -1,75 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
 <svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://web.resource.org/cc/"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="100%"
-   height="100%"
-   id="svg2"
-   sodipodi:version="0.32"
-   inkscape:version="0.44.1"
-   sodipodi:docbase="c:\temp"
-   sodipodi:docname="Scotch_regions_blank.svg"
-   version="1.0"
    viewBox="200 0 800 800"
    preserveAspectRatio="xMidYMid meet">
-   >
-  <defs
-     id="defs4" />
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     gridtolerance="10000"
-     guidetolerance="10"
-     objecttolerance="10"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="1"
-     inkscape:cx="347.01887"
-     inkscape:cy="359.26833"
-     inkscape:document-units="px"
-     inkscape:current-layer="layer1"
-     inkscape:window-width="1272"
-     inkscape:window-height="948"
-     inkscape:window-x="0"
-     inkscape:window-y="0"
-     height="100%"
-     width="100%" />
-  <metadata
-     id="metadata7">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <svg id="test">
-   <path
-      class="glencairn"
-      style="opacity:1;color:black;fill:#8cc056;fill-opacity:1;fill-rule:evenodd;stroke:black;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
-      d="M 53.037,22.997c45.328,0,90.655,0,135.983,0          c-0.462,32.558,1.689,62.144,7.999,90.989c6.033,27.583,16.253,53.933,19.997,78.99c5.57,37.27-10.411,63.548-32.996,78.99          c-5.856,4.005-22.15,10.517-22.997,15.998c-0.606,3.93,11.369,21.283,13.999,26.997c9.577,20.81,16.729,36.086-6,46.994          c-32.329,0-64.658,0-96.987,0c-22.155-10.187-15.856-25.577-6-46.994c1.861-4.043,14.256-22.396,13.999-25.997          c-0.469-6.562-16.75-12.727-22.998-16.998c-21.745-14.868-38.533-39.579-32.996-77.99c3.591-24.906,13.543-50.564,19.998-77.99          c6.645-28.237,6.786-58.19,7.999-89.989C51.952,24.578,51.872,23.165,53.037,22.997z"
-      />
-   </svg>
   <g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="scale(1.3)">
+     id="map"
+     transform="scale(1.3) translate(0, 0)">
      <!-- this is the border box -->
     <rect
-       style="opacity:1;color:none;none:white;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
+       style="opacity:1;color:none;none:white;fill-opacity:0;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible"
        id="map-container"
-       class="map-main"
+       class="map-main reset"
        width="800"
        height="800"
        x="0"
@@ -109,7 +48,7 @@
          id="path1993"
          class="islands"
          d="M 178.5,201.125 C 178.97874,200.72365 179.49147,200.37453 179.9375,199.9375 C 178.99325,199.41492 178.01543,198.79649 176.8125,197.84375 C 174.04458,195.65151 173.00595,194.13553 173.34375,192.84375 C 173.61041,191.82413 173.42006,191 172.9375,191 C 172.45495,191 172.1597,187.32438 172.28125,182.84375 C 172.5151,174.22398 171.10225,171.4928 168.90625,176.3125 C 167.9075,178.50453 166.97181,178.85936 160.46875,179.46875 C 151.76761,180.28411 149.9655,181.67572 153.4375,184.9375 C 155.4544,186.83228 156.52585,187.07111 159.90625,186.5 C 163.67549,185.86319 163.97714,186.01195 164.59375,188.46875 C 165.06134,190.33167 164.76393,191.45685 163.59375,192.3125 C 162.12185,193.3888 162.44508,193.98799 166.4375,197.90625 C 170.10178,201.50243 171.18893,202.0781 172.375,201.09375 C 173.39045,200.251 177.34699,200.41437 178.5,201.125 z "
-         style="opacity:1;color:black;fill:#618ebd;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
+         style="opacity:1;color:black;fill:#618ebd;fill-opacity:1;fill-rule:nonzero;stroke:black;stroke-width:;stroke-linecap:butt;stroke-linejoin:miter;marker:none;marker-start:none;marker-mid:none;marker-end:none;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;visibility:visible;display:inline;overflow:visible" />
       <path
          id="path3151"
          class="islands"
@@ -243,4 +182,3 @@
     </g>
   </g>
 </svg>
-
