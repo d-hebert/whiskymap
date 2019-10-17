@@ -1,15 +1,55 @@
 export class Content {
     constructor () {
-        this.container = d3.select('#map-container')
-            .append('div')
-            .attr('class', 'content-main')
     }
 
-    drawBox () {
-
+    draw (data) {
+        console.log(data)
+        const svg = d3.select('.main-chart')
+        svg.selectAll('rect')
+            .data(data)
+            .enter().append('rect')
+            .attr('width', 300)
+            .attr('height', 300)
     }
 
     render () {
-        
+        d3.json('/assets/whisky-test.json').then( (data) => {
+            // HERE! need to iterate through the types somehow, started
+            //        working on category(), right now only displaying body
+            //         stats for each region
+            const category = type => Object.values(Object.values(data)[0])[0][type]
+            console.log(category('smoky'))
+            // HERE 
+
+            const iSpeyside = 0
+            const iHighland = 1
+            const iLowland = 2
+            const iIsland = 3
+            const iIslay = 4
+            const iCampbeltown = 5
+
+            d3.select('#content-container').append('svg').attr('class', 'main-chart')
+            const svg = d3.select('.main-chart')
+            const svgWidth = parseInt(svg.style("width"), 10)
+            const svgHeight = parseInt(svg.style("height"), 10)
+            const xScale = d3.scaleLinear()
+                .domain([0, 8])
+                .range([0, svgWidth])
+            const yScale = d3.scaleBand()
+                .domain(data.map(d => Object.keys(d)))
+                .range([0, svgHeight])
+            const barChart = svg.selectAll('rect')
+                .data(data)
+                .enter()
+                .append('rect')
+                    .attr('class', 'bar')
+                    .attr('y', (d, i) => yScale(Object.keys(d)))
+                    .attr('width', (d, i) => xScale(Object.values(d)[0].smoky))
+                    .attr('height', yScale.bandwidth())
+            d3.select('#content-container')
+                .append("h2")
+                .text("Smoky")
+
+        })
     }
 }

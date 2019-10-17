@@ -1,0 +1,16 @@
+ const margin = { top: 20, right: 10, bottom: 20, left: 10 };
+            const width = 480 - margin.left - margin.right;
+            const height = 250 - margin.top - margin.bottom;
+            const n = 12
+            const svg = d3.select('#content-container').append('svg')
+                    .attr('width', width + margin.left + margin.right)
+                    .attr('height', height + margin.top + margin.bottom)
+            const g = svg.append('g')
+                    .attr('transform', "translate(" + margin.left + "," + margin.top + ")")
+            const x = d3.scaleLinear()
+                .range([0, width]);
+            const y = d3.scaleLinear()
+                .range([height, 0])
+            const xAxis = d3.axisBottom(x)
+            const yAxis = d3.axisLeft(y)
+            svg.text('howdy')

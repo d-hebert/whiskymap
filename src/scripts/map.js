@@ -1,5 +1,4 @@
-import MapSVG from '../resources/main-map.svg'
-import Scotland from '../resources/scotland.svg'
+import Scotland from '../../assets/scotland.svg'
 
 export class Map {
     constructor () {
@@ -36,6 +35,10 @@ export class Map {
             .delay(100)
             .duration(1500)
             .attr("transform", "scale(1.3) translate(0, 0)")
+        d3.select('h1')
+            .transition()
+            .delay(1200)
+            .text('Scotland')
     }
 
     handleMouseOver (d, i) {
@@ -55,7 +58,6 @@ export class Map {
     handleClick () {
         d3.select("#nessie-cover")
             .attr("class", "hide-her")
-        
         d3.selectAll("path")
             .classed("active", false)
             .style("stroke", "none")

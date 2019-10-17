@@ -1,7 +1,5 @@
 import './styles/index.scss';
-import { DistilleryGraph } from './scripts/distillery_graph'
 import { Map } from './scripts/map'
-import Glencairn from './resources/glencairn.svg'
 import { Content } from './scripts/content'
 
 

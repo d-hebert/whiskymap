@@ -57,6 +57,10 @@ module.exports = {
         {
             test: /\.svg$/,
             loader: require.resolve('raw-loader'),
+        },
+        {
+            test: /\.csv$/,
+            loader: require.resolve('csv-loader'),
         }
         ]
     },

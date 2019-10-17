@@ -1,6 +1,4 @@
-// [RowID, Distillery, Body, Sweetness, Smoky, Medicinal, 
-// Tobacco, Honey, Spicy, Winey, Nutty, Malty, Fruity, 
-// Floral, Postcode, Latitude, Longitude],
+import Data from '../assets/whisky_no_location.csv';
 
 export class DistilleryGraph {
         constructor(args) {
