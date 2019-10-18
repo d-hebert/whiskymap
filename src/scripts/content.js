@@ -41,7 +41,7 @@ export class Content {
                 .domain(data.map(d => Object.keys(d)))
                 .range([0, svgHeight])
 
-            const selector = (d, cat) => ( Object.values(d)[0][cat] )
+            const selector = (d) => ( Object.values(d)[0][cat] )
 
             const barChart = svg.selectAll('rect')
                 .data(data)
@@ -54,7 +54,7 @@ export class Content {
 
             d3.select('#content-container')
                 .append("h2")
-                .text("Smoky")
+                .text(cat)
         })
     }
 }
