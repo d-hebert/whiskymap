@@ -9,7 +9,7 @@ window.addEventListener('DOMContentLoaded', () => {
     map.render();
 
     const content = new Content;
-    content.render();
+    content.render('smoky');
 
 });
 
