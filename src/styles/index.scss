@@ -84,9 +84,14 @@ body {
 
 .bar {
     fill: #6c7f92;
-    stroke: whitesmoke;
-    stroke-opacity: 0;
-    stroke-width: 3px;
+    stroke: black;
+    stroke-opacity: 1;
+    stroke-width: 1px;
+}
+
+.bar-label {
+    stroke: black;
+    stroke-width: 0.25px;
 }
 
 .bar:hover {
@@ -97,4 +102,12 @@ body {
     width: 100%;
     height: 50%;
     background: none;
+}
+
+.bar-label {
+    z-index: 8;
+}
+
+.main-chart {
+    z-index: 5;
 }
