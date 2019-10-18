@@ -1,10 +1,12 @@
 import Scotland from '../../assets/scotland.svg'
+import { Content } from './content.js'
 
 export class Map {
     constructor () {
         this.container = d3.select('#map-container')
             .append('svg')
             .attr('class', 'map-main')
+        this.content = new Content;
     }
 
     attachMap () {
@@ -39,6 +41,8 @@ export class Map {
             .transition()
             .delay(1200)
             .text('Scotland')
+        d3.select('.main-chart').remove()
+        d3.selectAll('h4').remove()
     }
 
     handleMouseOver (d, i) {
@@ -77,6 +81,12 @@ export class Map {
             .attr("transform", zoom)
         d3.selectAll("." + className)
             .attr("class", className + " active")
+        let content= new Content
+        content.reduceSelection(className[0].toUpperCase() + className.slice(1))
+    }
+
+    updateContent (options) {
+
     }
 
     zoom (region) {
@@ -94,6 +104,7 @@ export class Map {
             return ("scale(6) translate(-340, -370)")
         }
     }
+
     render () {
         this.attachMap()
         this.addEvents()
