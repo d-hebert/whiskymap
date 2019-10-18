@@ -12,7 +12,7 @@ export class Content {
             .attr('height', 300)
     }
 
-    render () {
+    render (cat) {
         d3.json('/assets/whisky-test.json').then( (data) => {
             // HERE! need to iterate through the types somehow, started
             //        working on category(), right now only displaying body
@@ -21,35 +21,40 @@ export class Content {
             console.log(category('smoky'))
             // HERE 
 
-            const iSpeyside = 0
-            const iHighland = 1
-            const iLowland = 2
-            const iIsland = 3
-            const iIslay = 4
-            const iCampbeltown = 5
+            const spey = 0
+            const high = 1
+            const low = 2
+            const island = 3
+            const islay = 4
+            const ctown = 5
 
             d3.select('#content-container').append('svg').attr('class', 'main-chart')
             const svg = d3.select('.main-chart')
             const svgWidth = parseInt(svg.style("width"), 10)
             const svgHeight = parseInt(svg.style("height"), 10)
+
             const xScale = d3.scaleLinear()
                 .domain([0, 8])
                 .range([0, svgWidth])
+
             const yScale = d3.scaleBand()
                 .domain(data.map(d => Object.keys(d)))
                 .range([0, svgHeight])
+
+            const selector = (d, cat) => ( Object.values(d)[0][cat] )
+
             const barChart = svg.selectAll('rect')
                 .data(data)
                 .enter()
                 .append('rect')
                     .attr('class', 'bar')
-                    .attr('y', (d, i) => yScale(Object.keys(d)))
-                    .attr('width', (d, i) => xScale(Object.values(d)[0].smoky))
-                    .attr('height', yScale.bandwidth())
+                    .attr('y', (d) => yScale(Object.keys(d)))
+                    .attr('width', (d) => xScale(selector(d, 'smoky')))
+                    .attr('height', (yScale.bandwidth() * 0.8))
+
             d3.select('#content-container')
                 .append("h2")
                 .text("Smoky")
-
         })
     }
 }
