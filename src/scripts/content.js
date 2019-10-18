@@ -13,7 +13,7 @@ export class Content {
     }
 
     render (cat) {
-        d3.json('/dist/assets/whisky-test.json').then( (data) => {
+        d3.json('../assets/whisky-test.json').then( (data) => {
             // HERE! need to iterate through the types somehow, started
             //        working on category(), right now only displaying body
             //         stats for each region
