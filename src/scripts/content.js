@@ -119,9 +119,6 @@ export class Content {
                 .domain(data.map(d => Object.keys(d)))
                 .range([0, svgHeight])
 
-<<<<<<< HEAD
-            const selector = (d) => ( Object.values(d)[0][cat] )
-=======
             const yScaleText = d3.scaleBand()
                 .domain(data.map(d => Object.keys(d)))
                 .range([0, svgHeight])
@@ -129,7 +126,6 @@ export class Content {
             // Helper method to dynamically gather data for category variable
             const selector = (d) => ( Object.values(d)[0][cat] )
             const name = (d) => ( Object.keys(d)[0])
->>>>>>> master
 
             // Bars are drawn below:
             const barChart = svg.selectAll('rect')
