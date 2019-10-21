@@ -54,7 +54,7 @@ export class Content {
             .append("h4")
             .text("Average tasting profile:")
 
-        d3.json('../../assets/whisky-test.json').then( (data) => {
+        d3.json('https://raw.githubusercontent.com/d-hebert/whiskymap/master/assets/whisky-test.json').then( (data) => {
             d3.select('#content-container').append('svg').attr('class', 'main-chart')
             const svg = d3.select('.main-chart')
             const svgWidth = parseInt(svg.style("width"), 10)
@@ -105,7 +105,7 @@ export class Content {
     }
 
     renderCategory (cat) {
-        d3.json('../../assets/whisky-test.json').then( (data) => {
+        d3.json('https://raw.githubusercontent.com/d-hebert/whiskymap/master/assets/whisky-test.json').then( (data) => {
             d3.select('#content-container').append('svg').attr('class', 'main-chart')
             const svg = d3.select('.main-chart')
             const svgWidth = parseInt(svg.style("width"), 10)
