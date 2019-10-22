@@ -14,24 +14,10 @@ export class Content {
     }
 
     initialRender () {
-        const regions = [
-            'Speyside', 'Highland', 'Lowland', 'Island', 'Islay', 'Campbeltown'
-        ]
-        d3.select('#content-container')
-            .append('h2')
-            .text('Select a region')
-        const dropdown = d3.select('#content-container').append('div').append('select')
-        dropdown.selectAll('option')
-            .data(regions)
-            .enter()
-                .append('option')
-                .attr('value', d => {return d})
-                .text(d => { return d })
-        dropdown.on('change', () => {
-            const region = d3.event.target.selectedOptions[0].value
-            this.reduceSelection(region)
-        })
-
+        const container = d3.select('#content-container').append('div')
+            .attr('id', 'content-desc')
+        container.append('h3')
+            .text('Click on the map to explore the regions of Scotch whisky')
     }
 
     reduceSelection (val) {
@@ -50,7 +36,12 @@ export class Content {
     }
 
     renderRegion (region, idx) {
-        d3.select('#content-container')
+        const container = d3.select('#content-container')
+        container
+            .append('div')
+            .attr('id', 'content-desc')
+            .text('Click on the map to explore the regions of Scotch whisky')
+        container
             .append("h4")
             .text("Average tasting profile:")
 

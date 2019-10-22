@@ -49,7 +49,7 @@ export class Map {
         const target = d3.event.target;
         const className = target.className.baseVal 
         d3.selectAll("." + className)
-            .style('fill', '6c7f92')
+            .style('fill', 'edbb8a')
     }
 
     handleMouseOut () {
@@ -60,12 +60,15 @@ export class Map {
     }
 
     handleClick () {
-        d3.select("#nessie-cover")
-            .attr("class", "hide-her")
+        d3.selectAll('#content-container > *').remove()
         d3.selectAll("path")
             .classed("active", false)
-            .style("stroke", "none")
-            .style('fill', '#whitesmoke')
+            .transition()
+            .duration(1000)
+            .style("stroke", "black")
+            .style('fill', 'whitesmoke')
+        d3.select("#nessie-cover")
+            .attr("class", "hide-her")
         const target = d3.event.target
         const className = target.className.baseVal
         const zoom = this.zoom(className) 
@@ -81,7 +84,7 @@ export class Map {
             .attr("transform", zoom)
         d3.selectAll("." + className)
             .attr("class", className + " active")
-        let content= new Content
+        let content = new Content
         content.reduceSelection(className[0].toUpperCase() + className.slice(1))
     }
 

@@ -1,4 +1,5 @@
 body {
+    background-color: white;
     font-family: 'Lato', sans-serif;
     color: black;
     display: flex;
@@ -11,9 +12,9 @@ body {
 
 #title {
     position: absolute;
-    left: 45px;
-    top: 0px;
-    font-size: 1.3vw;
+    left: 52%;
+    top: 1%;
+    font-size: 1.8vw;
     text-shadow: 1px 1px 1px 2px whitesmoke;
 }
 
@@ -58,7 +59,8 @@ body {
 }
 
 .content-main {
-    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
     height: 100%;
     width: 100%;
 }
@@ -66,14 +68,23 @@ body {
 #content-container {
     height: 80vh;
     width: 80vh;
+    padding-top: 20%;
+    padding-left: 2%;
+    margin-right: 0;
     border: none;
     overflow: hidden;
     background: none;
 }
 
+#content-desc {
+    position: absolute;
+    top: 15%
+}
+
 .active {
+    fill: #edeac2 !important;
     transition: all 1s ease-in;
-    fill: #926c6c !important;
+    fill: #de8a5a !important;
     stroke: black !important;
     stroke-width: 1px !important;
 }
@@ -83,19 +94,20 @@ body {
 }
 
 .bar {
-    fill: #6c7f92;
-    stroke: black;
-    stroke-opacity: 1;
+    fill: #ca562c;
+    stroke: whitesmoke;
+    stroke-opacity: 0.25;
     stroke-width: 1px;
 }
 
 .bar-label {
-    stroke: black;
-    stroke-width: 0.25px;
+    stroke: #ca562c;
+    stroke-width: 0.6px;
+    stroke-opacity: 1;
 }
 
 .bar:hover {
-    fill: #926c6c;
+    fill: #edbb8a;
 }
 
 .main-chart {
@@ -111,3 +123,8 @@ body {
 .main-chart {
     z-index: 5;
 }
+
+.hovering {
+    fill: #6c7f92;
+}
+
