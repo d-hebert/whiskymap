@@ -1,5 +1,6 @@
 import Scotland from '../../assets/scotland.svg'
 import { Content } from './content.js'
+import { regionDescriptions } from './descriptions'
 
 export class Map {
     constructor () {
@@ -43,6 +44,7 @@ export class Map {
             .text('Scotland')
         d3.select('.main-chart').remove()
         d3.selectAll('h4').remove()
+        d3.select('#content-desc').remove()
     }
 
     handleMouseOver (d, i) {

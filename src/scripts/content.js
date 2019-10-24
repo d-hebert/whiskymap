@@ -1,3 +1,5 @@
+import { regionDescriptions } from './descriptions'
+
 export class Content {
 
     constructor () {
@@ -37,10 +39,15 @@ export class Content {
 
     renderRegion (region, idx) {
         const container = d3.select('#content-container')
+        const highlights = regionDescriptions[region].highlights
+        const description = regionDescriptions[region].blurb
         container
             .append('div')
             .attr('id', 'content-desc')
-            .text('Click on the map to explore the regions of Scotch whisky')
+            .text('Popular distilleries: ' + highlights)
+            .append('div')
+                .attr('id', 'content-blurb')
+                .text(description)
         container
             .append("h4")
             .text("Average tasting profile:")

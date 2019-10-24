@@ -1,5 +1,5 @@
-const regionDescriptions = {
-    highland: {
+export const regionDescriptions = {
+    "Highlands": {
         highlights: "Glenmorangie, Dalwhinnie, Oban",
         blurb: "As the largest region in Scotland, " + 
             "Highland whiskies can be extremely diverse. " +
@@ -8,7 +8,7 @@ const regionDescriptions = {
             "distilleries featuring a greater presence of smoke. " +
             "The Highlands produce about a quarter of all Scotch whisky."
     },
-    speyside: {
+    "Speyside": {
         highlights: "Macallan, Balvenie, Glenlivet",
         blurb: "Speyside contains the most distilleries of any " +
             "region produces more than half of the total whisky " +
@@ -17,21 +17,21 @@ const regionDescriptions = {
             "Scotch start here as Speyside produces many world-famous " +
             "drams, such as Glenlivet or the Macallan."
     },
-    lowland: {
+    "Lowlands": {
         highlights: "Auchentoshan, Glenkinchie",
         blurb: "The Lowlands include the fewest distilleries of " +
             "any region. Whiskies produced in the Lowlands are " +
             "classically triple-distilled and are usually quite " +
             "light in body with floral notes."
     },
-    islay: {
+    "Islay": {
         highlights: "Lagavulin, Bruichladdich, Laphroaig",
         blurb: "Islay is a small island boasting a world-renowned " +
         "collection of distilleries which are almost the opposite " +
         "of the legendary Speyside single malts. The profile of a " +
         "typical Islay whisky is peaty, saline, and woody."
     },
-    island: {
+    "Islands": {
         highlights: "Talisker, Highland Park, Jura",
         blurb: "The Islands region of Scotland is not an officially " +
         "recognized region, but most enthusiasts tend to categorize " +
@@ -40,7 +40,7 @@ const regionDescriptions = {
         "a very diverse palette. While a unifying flavor note tends " +
         "to be smoke, each distillery otherwise produces a unique dram."
     },
-    campbeltown: {
+    "Campbeltown": {
         highlights: "Springbank, Glen Scotia",
         blurb: "Campbeltown was once the center of whisky production and " +
         "distilled the majority of exported Scotch whisky. Due the success " +
