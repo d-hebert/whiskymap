@@ -26,14 +26,27 @@ const regionDescriptions = {
     },
     islay: {
         highlights: "Lagavulin, Bruichladdich, Laphroaig",
-        blurb: "",
+        blurb: "Islay is a small island boasting a world-renowned " +
+        "collection of distilleries which are almost the opposite " +
+        "of the legendary Speyside single malts. The profile of a " +
+        "typical Islay whisky is peaty, saline, and woody."
     },
     island: {
         highlights: "Talisker, Highland Park, Jura",
-        blurb: "",
+        blurb: "The Islands region of Scotland is not an officially " +
+        "recognized region, but most enthusiasts tend to categorize " +
+        "them as a unit or consider an island individually. On paper, " +
+        "they belong to the Highland region, and similarly contain " +
+        "a very diverse palette. While a unifying flavor note tends " +
+        "to be smoke, each distillery otherwise produces a unique dram."
     },
     campbeltown: {
         highlights: "Springbank, Glen Scotia",
-        blurb: "",
+        blurb: "Campbeltown was once the center of whisky production and " +
+        "distilled the majority of exported Scotch whisky. Due the success " +
+        "of significant blenders, it was said to have the greatest income " +
+        "per capita in Britain by the turn of the 20th century. " +
+        "Campbeltown now contains just three whisky distilleries, " +
+        "each bearing a legendary reputation."
     }
 }
