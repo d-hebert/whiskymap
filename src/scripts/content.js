@@ -44,13 +44,12 @@ export class Content {
         container
             .append('div')
             .attr('id', 'content-desc')
-            .text('Popular distilleries: ' + highlights)
             .append('div')
                 .attr('id', 'content-blurb')
                 .text(description)
         container
             .append("h4")
-            .text("Average tasting profile:")
+            .text("Average profile:")
 
         d3.json('https://raw.githubusercontent.com/d-hebert/whiskymap/master/assets/whisky-test.json').then( (data) => {
             d3.select('#content-container').append('svg').attr('class', 'main-chart')
