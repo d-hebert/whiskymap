@@ -132,7 +132,7 @@ body {
     margin-top: 20px;
 }
 
-#credits-container {
+.credits-container {
     color: #495057;
     position: fixed;
     bottom: 20%;
@@ -156,12 +156,12 @@ height: 2.5rem;
     color: black;
 }
 
-#site-link {
+.site-link {
     text-decoration: none;
     color: #495057 !important;
 }
 
-#site-link:hover {
+.site-link:hover {
     text-decoration: underline;
     color: #373d42 !important;
 }
