@@ -1,4 +1,4 @@
-import './styles/index.scss';
+import './styles/index.css';
 import { Map } from './scripts/map'
 import { Content } from './scripts/content'
 
