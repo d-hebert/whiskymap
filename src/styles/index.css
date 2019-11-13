@@ -78,6 +78,7 @@ body {
 
 #content-desc {
     position: absolute;
+    width: 40%;
     top: 15%
 }
 
