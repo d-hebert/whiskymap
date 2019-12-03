@@ -1,4 +1,4 @@
-Whisky Map
+# Whisky Map
 
 Scotland is divided into five major regions for official Scotch Whisky categorization.
 The Highlands, Lowlands, Islay, Campbeltown, and Speyside. The Highlands include a sixth, unofficial, subregion -- the Islands.
